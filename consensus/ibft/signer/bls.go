@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/0xPolygon/polygon-edge/crypto"
-	"github.com/0xPolygon/polygon-edge/secrets"
-	"github.com/0xPolygon/polygon-edge/types"
-	"github.com/0xPolygon/polygon-edge/validators"
+	"github.com/0xBridge/polygon-edge/crypto"
+	"github.com/0xBridge/polygon-edge/secrets"
+	"github.com/0xBridge/polygon-edge/types"
+	"github.com/0xBridge/polygon-edge/validators"
 	"github.com/coinbase/kryptology/pkg/signatures/bls/bls_sig"
 	"github.com/umbracle/fastrlp"
 )

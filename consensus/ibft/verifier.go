@@ -5,11 +5,11 @@ import (
 	"encoding/binary"
 	"encoding/hex"
 
+	"github.com/0xBridge/polygon-edge/consensus/ibft/signer"
+	"github.com/0xBridge/polygon-edge/crypto"
+	"github.com/0xBridge/polygon-edge/types"
 	"github.com/0xPolygon/go-ibft/messages"
 	protoIBFT "github.com/0xPolygon/go-ibft/messages/proto"
-	"github.com/0xPolygon/polygon-edge/consensus/ibft/signer"
-	"github.com/0xPolygon/polygon-edge/crypto"
-	"github.com/0xPolygon/polygon-edge/types"
 )
 
 // Verifier impl for go-ibft

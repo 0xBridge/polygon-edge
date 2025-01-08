@@ -4,8 +4,8 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/0xPolygon/polygon-edge/bls"
-	"github.com/0xPolygon/polygon-edge/types"
+	"github.com/0xBridge/polygon-edge/bls"
+	"github.com/0xBridge/polygon-edge/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

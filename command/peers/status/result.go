@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/0xPolygon/polygon-edge/command/helper"
+	"github.com/0xBridge/polygon-edge/command/helper"
 )
 
 type PeersStatusResult struct {

@@ -1,8 +1,8 @@
 package memory
 
 import (
-	"github.com/0xPolygon/polygon-edge/blockchain/storage"
-	"github.com/0xPolygon/polygon-edge/helper/hex"
+	"github.com/0xBridge/polygon-edge/blockchain/storage"
+	"github.com/0xBridge/polygon-edge/helper/hex"
 )
 
 var _ storage.Batch = (*batchMemory)(nil)

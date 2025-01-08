@@ -1,19 +1,19 @@
 package server
 
 import (
-	"github.com/0xPolygon/polygon-edge/chain"
-	"github.com/0xPolygon/polygon-edge/consensus"
-	consensusDev "github.com/0xPolygon/polygon-edge/consensus/dev"
-	consensusDummy "github.com/0xPolygon/polygon-edge/consensus/dummy"
-	consensusIBFT "github.com/0xPolygon/polygon-edge/consensus/ibft"
-	consensusPolyBFT "github.com/0xPolygon/polygon-edge/consensus/polybft"
-	"github.com/0xPolygon/polygon-edge/forkmanager"
-	"github.com/0xPolygon/polygon-edge/secrets"
-	"github.com/0xPolygon/polygon-edge/secrets/awsssm"
-	"github.com/0xPolygon/polygon-edge/secrets/gcpssm"
-	"github.com/0xPolygon/polygon-edge/secrets/hashicorpvault"
-	"github.com/0xPolygon/polygon-edge/secrets/local"
-	"github.com/0xPolygon/polygon-edge/state"
+	"github.com/0xBridge/polygon-edge/chain"
+	"github.com/0xBridge/polygon-edge/consensus"
+	consensusDev "github.com/0xBridge/polygon-edge/consensus/dev"
+	consensusDummy "github.com/0xBridge/polygon-edge/consensus/dummy"
+	consensusIBFT "github.com/0xBridge/polygon-edge/consensus/ibft"
+	consensusPolyBFT "github.com/0xBridge/polygon-edge/consensus/polybft"
+	"github.com/0xBridge/polygon-edge/forkmanager"
+	"github.com/0xBridge/polygon-edge/secrets"
+	"github.com/0xBridge/polygon-edge/secrets/awsssm"
+	"github.com/0xBridge/polygon-edge/secrets/gcpssm"
+	"github.com/0xBridge/polygon-edge/secrets/hashicorpvault"
+	"github.com/0xBridge/polygon-edge/secrets/local"
+	"github.com/0xBridge/polygon-edge/state"
 )
 
 type GenesisFactoryHook func(config *chain.Chain, engineName string) func(*state.Transition) error

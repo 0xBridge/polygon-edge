@@ -5,13 +5,13 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/0xPolygon/polygon-edge/chain"
-	"github.com/0xPolygon/polygon-edge/command"
-	"github.com/0xPolygon/polygon-edge/command/helper"
-	"github.com/0xPolygon/polygon-edge/contracts/staking"
-	"github.com/0xPolygon/polygon-edge/helper/hex"
-	"github.com/0xPolygon/polygon-edge/helper/predeployment"
-	"github.com/0xPolygon/polygon-edge/types"
+	"github.com/0xBridge/polygon-edge/chain"
+	"github.com/0xBridge/polygon-edge/command"
+	"github.com/0xBridge/polygon-edge/command/helper"
+	"github.com/0xBridge/polygon-edge/contracts/staking"
+	"github.com/0xBridge/polygon-edge/helper/hex"
+	"github.com/0xBridge/polygon-edge/helper/predeployment"
+	"github.com/0xBridge/polygon-edge/types"
 )
 
 const (

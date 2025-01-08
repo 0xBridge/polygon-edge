@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"math/bits"
 
-	"github.com/0xPolygon/polygon-edge/chain"
-	"github.com/0xPolygon/polygon-edge/state/runtime"
-	"github.com/0xPolygon/polygon-edge/types"
+	"github.com/0xBridge/polygon-edge/chain"
+	"github.com/0xBridge/polygon-edge/state/runtime"
+	"github.com/0xBridge/polygon-edge/types"
 )
 
 type blake2f struct {

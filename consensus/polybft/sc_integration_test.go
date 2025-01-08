@@ -11,17 +11,17 @@ import (
 	"github.com/umbracle/ethgo"
 	"github.com/umbracle/ethgo/abi"
 
-	"github.com/0xPolygon/polygon-edge/bls"
-	"github.com/0xPolygon/polygon-edge/chain"
-	"github.com/0xPolygon/polygon-edge/consensus/polybft/bitmap"
-	"github.com/0xPolygon/polygon-edge/consensus/polybft/contractsapi"
-	"github.com/0xPolygon/polygon-edge/consensus/polybft/signer"
-	"github.com/0xPolygon/polygon-edge/consensus/polybft/validator"
-	"github.com/0xPolygon/polygon-edge/contracts"
-	"github.com/0xPolygon/polygon-edge/crypto"
-	"github.com/0xPolygon/polygon-edge/helper/hex"
-	"github.com/0xPolygon/polygon-edge/state"
-	"github.com/0xPolygon/polygon-edge/types"
+	"github.com/0xBridge/polygon-edge/bls"
+	"github.com/0xBridge/polygon-edge/chain"
+	"github.com/0xBridge/polygon-edge/consensus/polybft/bitmap"
+	"github.com/0xBridge/polygon-edge/consensus/polybft/contractsapi"
+	"github.com/0xBridge/polygon-edge/consensus/polybft/signer"
+	"github.com/0xBridge/polygon-edge/consensus/polybft/validator"
+	"github.com/0xBridge/polygon-edge/contracts"
+	"github.com/0xBridge/polygon-edge/crypto"
+	"github.com/0xBridge/polygon-edge/helper/hex"
+	"github.com/0xBridge/polygon-edge/state"
+	"github.com/0xBridge/polygon-edge/types"
 )
 
 func TestIntegration_PerformExit(t *testing.T) {

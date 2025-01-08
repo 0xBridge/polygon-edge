@@ -3,9 +3,9 @@ package polybft
 import (
 	"fmt"
 
+	polybftProto "github.com/0xBridge/polygon-edge/consensus/polybft/proto"
+	"github.com/0xBridge/polygon-edge/types"
 	ibftProto "github.com/0xPolygon/go-ibft/messages/proto"
-	polybftProto "github.com/0xPolygon/polygon-edge/consensus/polybft/proto"
-	"github.com/0xPolygon/polygon-edge/types"
 	"github.com/libp2p/go-libp2p/core/peer"
 )
 

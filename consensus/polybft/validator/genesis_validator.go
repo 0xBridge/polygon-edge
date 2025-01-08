@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/0xPolygon/polygon-edge/bls"
-	"github.com/0xPolygon/polygon-edge/helper/common"
-	"github.com/0xPolygon/polygon-edge/types"
+	"github.com/0xBridge/polygon-edge/bls"
+	"github.com/0xBridge/polygon-edge/helper/common"
+	"github.com/0xBridge/polygon-edge/types"
 )
 
 // GenesisValidator represents public information about validator accounts which are the part of genesis

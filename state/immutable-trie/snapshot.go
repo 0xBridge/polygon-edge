@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/0xPolygon/polygon-edge/crypto"
-	"github.com/0xPolygon/polygon-edge/state"
-	"github.com/0xPolygon/polygon-edge/types"
+	"github.com/0xBridge/polygon-edge/crypto"
+	"github.com/0xBridge/polygon-edge/state"
+	"github.com/0xBridge/polygon-edge/types"
 	"github.com/umbracle/fastrlp"
 )
 

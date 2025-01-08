@@ -7,11 +7,11 @@ import (
 	"github.com/umbracle/ethgo"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/0xPolygon/polygon-edge/command"
-	"github.com/0xPolygon/polygon-edge/command/polybftsecrets"
-	"github.com/0xPolygon/polygon-edge/command/rootchain/helper"
-	"github.com/0xPolygon/polygon-edge/txrelayer"
-	"github.com/0xPolygon/polygon-edge/types"
+	"github.com/0xBridge/polygon-edge/command"
+	"github.com/0xBridge/polygon-edge/command/polybftsecrets"
+	"github.com/0xBridge/polygon-edge/command/rootchain/helper"
+	"github.com/0xBridge/polygon-edge/txrelayer"
+	"github.com/0xBridge/polygon-edge/types"
 )
 
 var (

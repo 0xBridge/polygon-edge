@@ -5,7 +5,7 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/0xPolygon/polygon-edge/helper/common"
+	"github.com/0xBridge/polygon-edge/helper/common"
 	bn256 "github.com/umbracle/go-eth-bn256"
 )
 

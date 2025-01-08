@@ -3,10 +3,10 @@ package validator
 import (
 	"math/big"
 
-	"github.com/0xPolygon/polygon-edge/chain"
-	"github.com/0xPolygon/polygon-edge/forkmanager"
-	"github.com/0xPolygon/polygon-edge/helper/common"
-	"github.com/0xPolygon/polygon-edge/types"
+	"github.com/0xBridge/polygon-edge/chain"
+	"github.com/0xBridge/polygon-edge/forkmanager"
+	"github.com/0xBridge/polygon-edge/helper/common"
+	"github.com/0xBridge/polygon-edge/types"
 	"github.com/hashicorp/go-hclog"
 )
 

@@ -16,16 +16,16 @@ import (
 	bolt "go.etcd.io/bbolt"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/0xPolygon/polygon-edge/bls"
-	"github.com/0xPolygon/polygon-edge/consensus/polybft/bitmap"
-	"github.com/0xPolygon/polygon-edge/consensus/polybft/contractsapi"
-	polybftProto "github.com/0xPolygon/polygon-edge/consensus/polybft/proto"
-	"github.com/0xPolygon/polygon-edge/consensus/polybft/signer"
-	"github.com/0xPolygon/polygon-edge/consensus/polybft/validator"
-	"github.com/0xPolygon/polygon-edge/consensus/polybft/wallet"
-	"github.com/0xPolygon/polygon-edge/contracts"
-	"github.com/0xPolygon/polygon-edge/tracker"
-	"github.com/0xPolygon/polygon-edge/types"
+	"github.com/0xBridge/polygon-edge/bls"
+	"github.com/0xBridge/polygon-edge/consensus/polybft/bitmap"
+	"github.com/0xBridge/polygon-edge/consensus/polybft/contractsapi"
+	polybftProto "github.com/0xBridge/polygon-edge/consensus/polybft/proto"
+	"github.com/0xBridge/polygon-edge/consensus/polybft/signer"
+	"github.com/0xBridge/polygon-edge/consensus/polybft/validator"
+	"github.com/0xBridge/polygon-edge/consensus/polybft/wallet"
+	"github.com/0xBridge/polygon-edge/contracts"
+	"github.com/0xBridge/polygon-edge/tracker"
+	"github.com/0xBridge/polygon-edge/types"
 )
 
 type Runtime interface {

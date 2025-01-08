@@ -5,13 +5,13 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/0xPolygon/polygon-edge/blockchain"
-	"github.com/0xPolygon/polygon-edge/chain"
-	"github.com/0xPolygon/polygon-edge/helper/hex"
-	"github.com/0xPolygon/polygon-edge/helper/progress"
-	"github.com/0xPolygon/polygon-edge/state/runtime"
-	"github.com/0xPolygon/polygon-edge/txpool/proto"
-	"github.com/0xPolygon/polygon-edge/types"
+	"github.com/0xBridge/polygon-edge/blockchain"
+	"github.com/0xBridge/polygon-edge/chain"
+	"github.com/0xBridge/polygon-edge/helper/hex"
+	"github.com/0xBridge/polygon-edge/helper/progress"
+	"github.com/0xBridge/polygon-edge/state/runtime"
+	"github.com/0xBridge/polygon-edge/txpool/proto"
+	"github.com/0xBridge/polygon-edge/types"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/0xPolygon/polygon-edge/command/helper"
-	rootHelper "github.com/0xPolygon/polygon-edge/command/rootchain/helper"
-	sidechainHelper "github.com/0xPolygon/polygon-edge/command/sidechain"
-	"github.com/0xPolygon/polygon-edge/types"
+	"github.com/0xBridge/polygon-edge/command/helper"
+	rootHelper "github.com/0xBridge/polygon-edge/command/rootchain/helper"
+	sidechainHelper "github.com/0xBridge/polygon-edge/command/sidechain"
+	"github.com/0xBridge/polygon-edge/types"
 )
 
 type stakeManagerDeployParams struct {

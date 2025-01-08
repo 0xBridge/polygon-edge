@@ -3,8 +3,8 @@ package main
 import (
 	_ "embed"
 
-	"github.com/0xPolygon/polygon-edge/command/root"
-	"github.com/0xPolygon/polygon-edge/licenses"
+	"github.com/0xBridge/polygon-edge/command/root"
+	"github.com/0xBridge/polygon-edge/licenses"
 )
 
 var (

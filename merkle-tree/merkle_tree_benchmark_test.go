@@ -3,7 +3,7 @@ package merkle
 import (
 	"testing"
 
-	"github.com/0xPolygon/polygon-edge/helper/common"
+	"github.com/0xBridge/polygon-edge/helper/common"
 	"github.com/stretchr/testify/require"
 )
 

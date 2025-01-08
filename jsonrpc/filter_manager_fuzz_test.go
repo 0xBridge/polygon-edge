@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/0xPolygon/polygon-edge/types"
+	"github.com/0xBridge/polygon-edge/types"
 	"github.com/hashicorp/go-hclog"
 	"github.com/stretchr/testify/assert"
 )

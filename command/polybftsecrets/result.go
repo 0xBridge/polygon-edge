@@ -4,10 +4,10 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/0xPolygon/polygon-edge/command"
+	"github.com/0xBridge/polygon-edge/command"
 
-	"github.com/0xPolygon/polygon-edge/command/helper"
-	"github.com/0xPolygon/polygon-edge/types"
+	"github.com/0xBridge/polygon-edge/command/helper"
+	"github.com/0xBridge/polygon-edge/types"
 )
 
 type Results []command.CommandResult

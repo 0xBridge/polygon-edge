@@ -1,8 +1,8 @@
 package snapshot
 
 import (
-	"github.com/0xPolygon/polygon-edge/types"
-	"github.com/0xPolygon/polygon-edge/validators"
+	"github.com/0xBridge/polygon-edge/types"
+	"github.com/0xBridge/polygon-edge/validators"
 )
 
 // isAuthorize is a helper function to return the bool value from Nonce

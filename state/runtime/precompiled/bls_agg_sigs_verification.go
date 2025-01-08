@@ -3,11 +3,11 @@ package precompiled
 import (
 	"errors"
 
-	"github.com/0xPolygon/polygon-edge/bls"
-	"github.com/0xPolygon/polygon-edge/chain"
-	"github.com/0xPolygon/polygon-edge/consensus/polybft/signer"
-	"github.com/0xPolygon/polygon-edge/state/runtime"
-	"github.com/0xPolygon/polygon-edge/types"
+	"github.com/0xBridge/polygon-edge/bls"
+	"github.com/0xBridge/polygon-edge/chain"
+	"github.com/0xBridge/polygon-edge/consensus/polybft/signer"
+	"github.com/0xBridge/polygon-edge/state/runtime"
+	"github.com/0xBridge/polygon-edge/types"
 	"github.com/umbracle/ethgo/abi"
 )
 

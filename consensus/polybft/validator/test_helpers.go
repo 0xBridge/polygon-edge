@@ -8,10 +8,10 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/0xPolygon/polygon-edge/bls"
-	"github.com/0xPolygon/polygon-edge/consensus/polybft/bitmap"
-	"github.com/0xPolygon/polygon-edge/consensus/polybft/wallet"
-	"github.com/0xPolygon/polygon-edge/types"
+	"github.com/0xBridge/polygon-edge/bls"
+	"github.com/0xBridge/polygon-edge/consensus/polybft/bitmap"
+	"github.com/0xBridge/polygon-edge/consensus/polybft/wallet"
+	"github.com/0xBridge/polygon-edge/types"
 	"github.com/hashicorp/go-hclog"
 	"github.com/stretchr/testify/require"
 )

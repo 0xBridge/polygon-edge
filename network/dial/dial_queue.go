@@ -5,7 +5,7 @@ import (
 	"context"
 	"sync"
 
-	"github.com/0xPolygon/polygon-edge/network/common"
+	"github.com/0xBridge/polygon-edge/network/common"
 
 	"github.com/libp2p/go-libp2p/core/peer"
 )

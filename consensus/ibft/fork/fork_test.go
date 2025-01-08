@@ -7,10 +7,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/0xPolygon/polygon-edge/helper/common"
-	testHelper "github.com/0xPolygon/polygon-edge/helper/tests"
-	"github.com/0xPolygon/polygon-edge/types"
-	"github.com/0xPolygon/polygon-edge/validators"
+	"github.com/0xBridge/polygon-edge/helper/common"
+	testHelper "github.com/0xBridge/polygon-edge/helper/tests"
+	"github.com/0xBridge/polygon-edge/types"
+	"github.com/0xBridge/polygon-edge/validators"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -3,7 +3,7 @@ package validators
 import (
 	"errors"
 
-	"github.com/0xPolygon/polygon-edge/types"
+	"github.com/0xBridge/polygon-edge/types"
 	"github.com/umbracle/fastrlp"
 )
 

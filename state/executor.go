@@ -8,15 +8,15 @@ import (
 
 	"github.com/hashicorp/go-hclog"
 
-	"github.com/0xPolygon/polygon-edge/chain"
-	"github.com/0xPolygon/polygon-edge/contracts"
-	"github.com/0xPolygon/polygon-edge/crypto"
-	"github.com/0xPolygon/polygon-edge/state/runtime"
-	"github.com/0xPolygon/polygon-edge/state/runtime/addresslist"
-	"github.com/0xPolygon/polygon-edge/state/runtime/evm"
-	"github.com/0xPolygon/polygon-edge/state/runtime/precompiled"
-	"github.com/0xPolygon/polygon-edge/state/runtime/tracer"
-	"github.com/0xPolygon/polygon-edge/types"
+	"github.com/0xBridge/polygon-edge/chain"
+	"github.com/0xBridge/polygon-edge/contracts"
+	"github.com/0xBridge/polygon-edge/crypto"
+	"github.com/0xBridge/polygon-edge/state/runtime"
+	"github.com/0xBridge/polygon-edge/state/runtime/addresslist"
+	"github.com/0xBridge/polygon-edge/state/runtime/evm"
+	"github.com/0xBridge/polygon-edge/state/runtime/precompiled"
+	"github.com/0xBridge/polygon-edge/state/runtime/tracer"
+	"github.com/0xBridge/polygon-edge/types"
 )
 
 const (

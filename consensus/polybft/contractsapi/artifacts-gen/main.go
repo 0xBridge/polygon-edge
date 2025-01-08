@@ -11,8 +11,8 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/0xPolygon/polygon-edge/consensus/polybft/contractsapi/artifact"
-	"github.com/0xPolygon/polygon-edge/helper/common"
+	"github.com/0xBridge/polygon-edge/consensus/polybft/contractsapi/artifact"
+	"github.com/0xBridge/polygon-edge/helper/common"
 )
 
 const (

@@ -7,19 +7,19 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/0xPolygon/polygon-edge/helper/common"
-	"github.com/0xPolygon/polygon-edge/helper/hex"
-	"github.com/0xPolygon/polygon-edge/state"
+	"github.com/0xBridge/polygon-edge/helper/common"
+	"github.com/0xBridge/polygon-edge/helper/hex"
+	"github.com/0xBridge/polygon-edge/state"
 	"github.com/hashicorp/go-hclog"
 	lru "github.com/hashicorp/golang-lru"
 
-	"github.com/0xPolygon/polygon-edge/chain"
+	"github.com/0xBridge/polygon-edge/chain"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/0xPolygon/polygon-edge/blockchain/storage"
-	"github.com/0xPolygon/polygon-edge/blockchain/storage/memory"
-	"github.com/0xPolygon/polygon-edge/types"
+	"github.com/0xBridge/polygon-edge/blockchain/storage"
+	"github.com/0xBridge/polygon-edge/blockchain/storage/memory"
+	"github.com/0xBridge/polygon-edge/types"
 )
 
 func TestGenesis(t *testing.T) {
