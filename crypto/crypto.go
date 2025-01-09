@@ -173,7 +173,7 @@ func RecoverPubkey(signature, hash []byte) (*ecdsa.PublicKey, error) {
 // Sign produces a compact signature of the data in hash with the given
 // private key on the secp256k1 curve.
 func Sign(priv *ecdsa.PrivateKey, hash []byte) ([]byte, error) {
-	sig := btcecEcdsa.SignCompact(btcec.PrivKeyFromECDSA(priv), hash, false)
+	sig := btcecEcdsa.SignCompact(ConvertECDSAToBTCEC(priv), hash, false)
 
 	term := byte(0)
 	if sig[0] == 28 {
@@ -181,6 +181,16 @@ func Sign(priv *ecdsa.PrivateKey, hash []byte) ([]byte, error) {
 	}
 
 	return append(sig, term)[1:], nil
+}
+
+func ConvertECDSAToBTCEC(ecdsaPrivKey *ecdsa.PrivateKey) *btcec.PrivateKey {
+	// Extract the private key bytes
+	privKeyBytes := ecdsaPrivKey.D.Bytes()
+
+	// Create a new btcec private key from the bytes
+	btcecPrivKey, _ := btcec.PrivKeyFromBytes(privKeyBytes)
+
+	return btcecPrivKey
 }
 
 // SignByBLS signs the given data by BLS
