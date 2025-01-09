@@ -10,12 +10,13 @@ import (
 	"hash"
 	"math/big"
 
+	"github.com/0xBridge/coinbase-kryptology/pkg/signatures/bls/bls_sig"
 	"github.com/0xBridge/polygon-edge/helper/hex"
 	"github.com/0xBridge/polygon-edge/helper/keystore"
 	"github.com/0xBridge/polygon-edge/secrets"
 	"github.com/0xBridge/polygon-edge/types"
-	"github.com/btcsuite/btcd/btcec"
-	"github.com/coinbase/kryptology/pkg/signatures/bls/bls_sig"
+	"github.com/btcsuite/btcd/btcec/v2"
+	btcecEcdsa "github.com/btcsuite/btcd/btcec/v2/ecdsa"
 	"github.com/umbracle/fastrlp"
 	"golang.org/x/crypto/sha3"
 )
@@ -101,14 +102,14 @@ func CreateAddress2(addr types.Address, salt [32]byte, inithash []byte) types.Ad
 }
 
 func ParseECDSAPrivateKey(buf []byte) (*ecdsa.PrivateKey, error) {
-	prv, _ := btcec.PrivKeyFromBytes(S256, buf)
+	prv, _ := btcec.PrivKeyFromBytes(buf)
 
 	return prv.ToECDSA(), nil
 }
 
 // MarshalECDSAPrivateKey serializes the private key's D value to a []byte
 func MarshalECDSAPrivateKey(priv *ecdsa.PrivateKey) ([]byte, error) {
-	return (*btcec.PrivateKey)(priv).Serialize(), nil
+	return (*ecdsa.PrivateKey)(priv).D.Bytes(), nil
 }
 
 // GenerateECDSAKey generates a new key based on the secp256k1 elliptic curve.
@@ -160,7 +161,7 @@ func RecoverPubkey(signature, hash []byte) (*ecdsa.PublicKey, error) {
 	}
 
 	sig := append([]byte{term}, signature[:size-1]...)
-	pub, _, err := btcec.RecoverCompact(S256, sig, hash)
+	pub, _, err := btcecEcdsa.RecoverCompact(sig, hash)
 
 	if err != nil {
 		return nil, err
@@ -172,10 +173,7 @@ func RecoverPubkey(signature, hash []byte) (*ecdsa.PublicKey, error) {
 // Sign produces a compact signature of the data in hash with the given
 // private key on the secp256k1 curve.
 func Sign(priv *ecdsa.PrivateKey, hash []byte) ([]byte, error) {
-	sig, err := btcec.SignCompact(S256, (*btcec.PrivateKey)(priv), hash, false)
-	if err != nil {
-		return nil, err
-	}
+	sig := btcecEcdsa.SignCompact(btcec.PrivKeyFromECDSA(priv), hash, false)
 
 	term := byte(0)
 	if sig[0] == 28 {
