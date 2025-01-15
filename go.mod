@@ -40,11 +40,11 @@ require (
 
 require (
 	cloud.google.com/go/secretmanager v1.13.0
-	github.com/armon/go-metrics v0.4.1
 	github.com/aws/aws-sdk-go v1.52.2
 	github.com/benbjohnson/clock v1.3.5 // indirect
 	github.com/fatih/color v1.15.0 // indirect
 	github.com/godbus/dbus/v5 v5.1.0 // indirect
+	github.com/hashicorp/go-metrics v0.5.1
 	github.com/ipfs/go-cid v0.4.1 // indirect
 	github.com/klauspost/compress v1.17.2 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
@@ -85,6 +85,7 @@ require (
 	github.com/DataDog/datadog-agent/pkg/remoteconfig/state v0.48.1 // indirect
 	github.com/DataDog/go-libddwaf/v2 v2.4.2 // indirect
 	github.com/DataDog/go-tuf v1.0.2-0.5.2 // indirect
+	github.com/armon/go-metrics v0.4.1 // indirect
 	github.com/btcsuite/btcd/btcutil v1.1.0 // indirect
 	github.com/ebitengine/purego v0.6.0-alpha.5 // indirect
 	github.com/felixge/httpsnoop v1.0.4 // indirect

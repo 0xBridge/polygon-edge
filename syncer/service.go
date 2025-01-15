@@ -7,8 +7,8 @@ import (
 	"github.com/0xBridge/polygon-edge/network/grpc"
 	"github.com/0xBridge/polygon-edge/syncer/proto"
 	"github.com/0xBridge/polygon-edge/types"
-	"github.com/armon/go-metrics"
 	"github.com/golang/protobuf/ptypes/empty"
+	"github.com/hashicorp/go-metrics"
 )
 
 var (
