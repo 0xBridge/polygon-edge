@@ -611,6 +611,10 @@ func (s *Server) NewProtoConnection(protocol string, peerID peer.ID) (*rawGrpc.C
 	return p.Client(stream)
 }
 
+func (s *Server) GetServerConfig() *Config {
+	return s.config
+}
+
 func (s *Server) NewStream(proto string, id peer.ID) (network.Stream, error) {
 	return s.host.NewStream(context.Background(), id, protocol.ID(proto))
 }
