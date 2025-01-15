@@ -3,7 +3,7 @@ package txpool
 import (
 	"sync/atomic"
 
-	"github.com/hashicorp/go-metrics"
+	"github.com/armon/go-metrics"
 
 	"github.com/0xBridge/polygon-edge/types"
 )

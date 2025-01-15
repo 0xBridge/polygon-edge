@@ -4,7 +4,7 @@ import (
 	"time"
 
 	"github.com/0xBridge/polygon-edge/types"
-	"github.com/hashicorp/go-metrics"
+	"github.com/armon/go-metrics"
 )
 
 const (

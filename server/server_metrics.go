@@ -5,8 +5,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/hashicorp/go-metrics"
-	"github.com/hashicorp/go-metrics/prometheus"
+	"github.com/armon/go-metrics"
+	"github.com/armon/go-metrics/prometheus"
 	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
 	"gopkg.in/DataDog/dd-trace-go.v1/profiler"
 )

@@ -8,7 +8,7 @@ import (
 	"github.com/0xBridge/polygon-edge/network/grpc"
 	"github.com/0xBridge/polygon-edge/network/identity"
 	"github.com/0xBridge/polygon-edge/network/proto"
-	"github.com/hashicorp/go-metrics"
+	"github.com/armon/go-metrics"
 	kbucket "github.com/libp2p/go-libp2p-kbucket"
 	"github.com/libp2p/go-libp2p-kbucket/keyspace"
 	"github.com/libp2p/go-libp2p/core/network"

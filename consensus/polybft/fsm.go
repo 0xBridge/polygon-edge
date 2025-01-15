@@ -9,8 +9,8 @@ import (
 
 	"github.com/0xPolygon/go-ibft/messages"
 	"github.com/0xPolygon/go-ibft/messages/proto"
+	"github.com/armon/go-metrics"
 	hcf "github.com/hashicorp/go-hclog"
-	"github.com/hashicorp/go-metrics"
 
 	"github.com/0xBridge/polygon-edge/bls"
 	"github.com/0xBridge/polygon-edge/consensus/polybft/bitmap"

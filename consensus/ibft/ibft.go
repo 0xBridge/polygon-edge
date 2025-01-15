@@ -17,8 +17,8 @@ import (
 	"github.com/0xBridge/polygon-edge/syncer"
 	"github.com/0xBridge/polygon-edge/types"
 	"github.com/0xBridge/polygon-edge/validators"
+	"github.com/armon/go-metrics"
 	"github.com/hashicorp/go-hclog"
-	"github.com/hashicorp/go-metrics"
 	"google.golang.org/grpc"
 )
 
