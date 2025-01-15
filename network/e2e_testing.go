@@ -244,7 +244,7 @@ var (
 )
 
 // initBootnodes is a helper method for specifying the server's bootnode configuration
-func initBootnodes(server *Server, bootnodes ...string) {
+func InitBootnodes(server *Server, bootnodes ...string) {
 	savedBootnodes := bootnodes
 	if len(savedBootnodes) == 0 {
 		// Set the default bootnode to be the server itself
@@ -307,7 +307,7 @@ func CreateServer(params *CreateServerParams) (*Server, error) {
 		return nil, err
 	}
 
-	initBootnodes(server)
+	InitBootnodes(server)
 
 	if params.ServerCallback != nil {
 		params.ServerCallback(server)
