@@ -750,3 +750,18 @@ func (s *Server) updatePendingConnCountMetrics(direction network.Direction) {
 			float32(s.connectionCounts.GetPendingOutboundConnCount()))
 	}
 }
+
+func (s *Server) InitBootnodes(bootnodes []string) {
+	savedBootnodes := bootnodes
+	if len(savedBootnodes) == 0 {
+		// Set the default bootnode to be the server itself
+		savedBootnodes = []string{
+			fmt.Sprintf(
+				"%s/p2p/%s",
+				s.addrs[0].String(),
+				s.host.ID().String(),
+			),
+		}
+	}
+	s.config.Chain.Bootnodes = savedBootnodes
+}
