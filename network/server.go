@@ -333,7 +333,7 @@ func (s *Server) keepAliveMinimumPeerConnections() {
 			return
 		}
 
-		if s.numPeers() < MinimumPeerConnections {
+		if s.NumPeers() < MinimumPeerConnections {
 			if s.config.NoDiscover || !s.bootnodes.hasBootnodes() {
 				// dial unconnected peer
 				randPeer := s.GetRandomPeer()
