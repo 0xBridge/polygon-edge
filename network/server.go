@@ -420,7 +420,7 @@ func (s *Server) runDial() {
 }
 
 // numPeers returns the number of connected peers [Thread safe]
-func (s *Server) numPeers() int64 {
+func (s *Server) NumPeers() int64 {
 	s.peersLock.Lock()
 	defer s.peersLock.Unlock()
 
