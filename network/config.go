@@ -28,7 +28,7 @@ func DefaultConfig() *Config {
 		NoDiscover: false,
 		// Addresses are bound to localhost by default
 		Addr: &net.TCPAddr{
-			IP:   net.ParseIP("127.0.0.1"),
+			IP:   net.ParseIP("0.0.0.0"),
 			Port: DefaultLibp2pPort,
 		},
 		// The default ratio for outbound / max peer connections is 0.20
